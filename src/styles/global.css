@@ -18,10 +18,9 @@
     --blue-twitter:#2AA9E0;
 }
 
-
 body {
     background: var(--background);
-    color: var(--green);
+    color: var(--text);
 }
 
 @media(max-width: 1080px){
@@ -42,12 +41,4 @@ body, input, textarea, button, h1{
 
 button {
     cursor: pointer;
-}
-.container{
-    height: 100vh;
-    max-width: 992px;
-    margin: 0 auto;
-    padding: 2.5rem 2rem;
-    display: flex;
-    flex-direction: column;
 }
