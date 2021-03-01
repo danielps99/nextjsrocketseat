@@ -6,6 +6,12 @@ npm install --global yarn
 yarn create next-app nextjsrocketseat
 yarn add typescript @types/react @types/react-dom @types/node -D
 
+Para salvar dados em cookies:
+yarn add js-cookie
+
+A biblioteca js-cookie não utiliza typescript, ou seja, não é tipada. Para que apareça no Vscode os tipos de objetos da biblioteca js-cookie utilize o comando abaixo:
+yarn add @types/js-cookie -D
+
 ## Instruções para executar o projeto
 
 yarn dev
