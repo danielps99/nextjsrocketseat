@@ -20,14 +20,13 @@ interface CountdownProviderProps {
 
 export function CountdownProvider({children}: CountdownProviderProps) {
     const{ startNewChallenge } = useContext(ChallengesContext);
-    const timeInSeconds = 0.05 * 60;
+    const timeInSeconds = 5 * 60;
     const [time, setTime] = useState(timeInSeconds);
     const [isActive, setIsActive] = useState(false);
     const [hasFinished, setHasFinished] = useState(false);
 
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
-
 
     function startCountdown(){
         setIsActive(true);
@@ -51,7 +50,6 @@ export function CountdownProvider({children}: CountdownProviderProps) {
             startNewChallenge();
         }
     }, [isActive, time]);
-
     
     return (
         <CountdownContext.Provider 

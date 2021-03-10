@@ -103,7 +103,7 @@ export function ChallengesProvider({children, ...rest}: ChallengesProviderProps)
                 completeChallenge
             }}>
             {children}
-            {/* <LevelUpModal /> */}
+            <LevelUpModal />
         </ChallengesContext.Provider>
     )
 }
